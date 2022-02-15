@@ -1,0 +1,209 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: 'Cabin', sans-serif;
+}
+#topBar {
+    background:#000;
+    color:#fff;
+    text-align: center;
+    padding: 13px 0;
+}
+#topBar span {
+    position: relative;
+    z-index:1;
+    display: inline-block;
+}
+#topBar span::after {
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:3px;
+    height:1px;
+    width:100%;
+    z-index:-1;
+    background-color: #606160;
+}
+#header {
+    background: #f0eeeb;
+}
+#header a {
+    color:#000;
+    font-size: 18px;
+}
+#header .navbar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#header .navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+#header .nav-link {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+#header a.btn {
+    background: #000;
+    color:#fff;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+#heroSection {
+    padding-bottom: 70px;
+    background: #f0eeeb;
+}
+.heroTitle {
+    font-weight: 700;
+    font-size:3.75rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    color: #292929;
+}
+.heroDesc {
+    font-size: 18px;
+    color:#5a5444;
+}
+.heroDesc ul {
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.heroDesc ul li { 
+    list-style: none; 
+    font-weight: 600;
+    padding-left: 40px;
+    background:url(img/icons/Checkmark.svg) no-repeat 0 0;
+    background-size:25px 25px;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+.heroForm {
+    display: flex;
+}
+.heroForm input {
+    border:1px #b2b2b1 solid;
+    height:60px;
+    padding: 20px;
+    width: 200px;
+    color:#b2b2b1;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+.heroForm button {
+    border-radius: 5px;
+    width:137px;
+    height: 60px;
+    border:0;
+    background: #000;
+    color:#fff;
+    font-weight: 700;
+}
+#logoSection {
+    padding:45px 0;
+}
+#logoSection .col {
+    width: calc( 100% / 8 );
+    display: flex;
+    align-items: center;
+}
+#logoSection .col img { 
+    display: block; 
+    max-width: 100%;
+}
+#featuretteSection {
+    padding-bottom:70px;
+}
+.featuretteWrapper {
+    background: #f0eeeb url(img/Phone-Mockup-Desktop.png) no-repeat right bottom;
+    padding:100px 0;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.featuretteTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.featuretteDesc {
+    color: #5a5444;
+    margin-bottom: 20px;
+}
+.featuretteLink {}
+.featuretteLink a {
+    color: #5a5444;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.promoText {
+    padding-top: 100px;
+}
+#footer {
+    padding:55px 0 30px;
+    background:#000;
+    color:#9e9e9e;
+}
+.footerLogo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footerDesc {}
+.footerLinkTitle {
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.footerLinks {}
+.footerLinks li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footerLinks li a {
+    color:#9e9e9e;
+    text-decoration: none;
+}
+.footerLinks li a:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1199px) {
+    .featuretteWrapper {
+        padding-top: 80px;
+        padding-bottom: 350px;
+        background-image:url(img/Phone-Mockup-Tablet.png);
+        background-position: bottom center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .featuretteWrapper {
+        padding-top: 40px;
+        padding-bottom: 350px;
+        background-image:url(img/Phone-Mockup-Mobile.png);
+        background-position: bottom center;
+    }
+    #header .navbar-collapse {
+        position: absolute;
+        top: calc( 100% - 40px );
+        left:0;
+        z-index: 5;
+        background:#fff;
+        width:100%;
+        padding-bottom: 10px;
+    }
+    #header a.nav-link {
+        color:#000;
+        padding: 0.75rem 1rem;
+        border-bottom:1px #f0eeeb solid;
+    }
+    #header a.btn {
+        margin-top: 10px;
+    }
+}
